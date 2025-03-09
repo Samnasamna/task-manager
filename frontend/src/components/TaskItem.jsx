@@ -54,7 +54,7 @@ const TaskItem = ({ task, onDelete  }) => {
     <>
       <div className="task-item-container">
         <h1 className="task-title">
-          {updatedTask.title} <span className="task-date">2025 Jan 20</span>
+          {updatedTask.title} <span className="task-date">{new Date(task.created_at).toISOString().split("T")[0]}</span>
         </h1>
         <p>{updatedTask.description}</p>
 
