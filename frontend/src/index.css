@@ -1,0 +1,9 @@
+:root {
+    --secondary-color: rgb(175, 47, 111);
+    --text-secondary-color:rgb(148, 144, 144);
+    --button-color-completed:rgba(97, 150, 97, 0.901);
+    --button-color-pending: rgb(191, 84, 84);
+    
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+  }

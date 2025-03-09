@@ -1,0 +1,92 @@
+.task-item-container{
+    margin: 30px 20px;
+    width: 300px;
+    height: fit-content;
+    min-height: 150px;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.462);
+    padding: 5px 20px 15px;
+    border-radius: 10px;
+}
+.task-item-container .task-item-header{
+    margin-top: -10px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.task-title {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-date {
+    font-size: 12px;
+    font-weight: normal;
+    color: gray;
+}
+p{
+    font-size: 14px;
+    margin-top: -10px;
+    overflow: hidden;
+}
+.task-item-container .task-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-item-container .task-item-footer .pending{
+    background-color: var( --button-color-pending);
+    border: none;
+    padding: 7px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    cursor: pointer;
+}
+.task-item-container .task-item-footer .completed{
+    background-color: var( --button-color-completed);
+    border: none;
+    padding: 7px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.operations{
+    display: flex;
+    gap: 20px;
+}
+.operations img{
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.new-task{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(179, 179, 179, 0.123);
+    box-shadow: none;
+    border: 3px dashed rgba(128, 128, 128, 0.51);
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    button{
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-family: var(--font-primary);
+        font-size: 20px;
+        color: grey;
+        
+    }
+}

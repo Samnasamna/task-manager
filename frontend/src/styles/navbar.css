@@ -1,0 +1,40 @@
+/*Nav Bar Style*/
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.36);
+    padding: 20px 40px;
+    height: 50px;
+
+}
+.navbar-container .logo-container{
+    display: flex;
+    align-items: center;
+    gap:6px;
+    
+}
+.navbar-container .logo-container img{
+    width: 30px;
+    height:30px;
+}
+.navbar-container .logo-container h1{
+    font-size: 17px;  
+    color: var(--secondary-color);
+
+}
+.navbar-container ul {
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+.navbar-container ul li{
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.navbar-container ul li:hover{
+    border-bottom: 2px solid var(--secondary-color);
+}
+
