@@ -5,7 +5,7 @@ import Edit from '../components/Edit';
 import dlt from "../assets/dlt.png";
 import edit from "../assets/edit.png";
 
-const TaskItem = ({ task }) => {
+const TaskItem = ({ task, onDelete  }) => {
   const [status, setStatus] = useState(task.status)
   const [showEdit, setShowEdit] = useState(false);
   const [updatedTask, setUpdatedTask] = useState(task);

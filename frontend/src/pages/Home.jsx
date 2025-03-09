@@ -26,13 +26,17 @@ const Home = () => {
     fetchTasks();
   },[])
 
+  const handleDeleteTask = (taskId) => {
+    setAllTasks((prevTasks) => prevTasks.filter(task => task.id !== taskId));
+  };
+
   return (
     <div>
 
       <NavBar/>
       <div className='all-task-items'>
       {allTasks.length > 0 && (
-        allTasks.map((task)=> <TaskItem key={task.id} task={task}/>)
+        allTasks.map((task)=> <TaskItem key={task.id} task={task} onDelete={handleDeleteTask}/>)
       )}
       <div className='task-item-container new-task' onClick={()=>setShowEdit(true)}>
         <img src={add} alt="" />

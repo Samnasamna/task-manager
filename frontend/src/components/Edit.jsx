@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../styles/edit.css";
-import dlt from "../assets/delete.png";
 import axios from "axios";
 
 const Edit = ({ header, setShowEdit, task, onUpdate }) => {
@@ -34,7 +33,6 @@ const Edit = ({ header, setShowEdit, task, onUpdate }) => {
       <form onSubmit={handleSubmit}>
         <div className="edit-container-header">
           <h1>{header} Task</h1>
-          <img src={dlt} alt="Close" onClick={() => setShowEdit(false)} />
         </div>
 
         <label>Title: </label>
